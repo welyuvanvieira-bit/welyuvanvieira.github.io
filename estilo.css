@@ -1,0 +1,338 @@
+body {
+   background-color:#9e9e9e;
+   margin:0;
+   font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+    
+.logomarca {
+    width: 400px;
+    height: 60px;
+    object-fit: cover;
+    margin-left: 30px;
+    margin-top: 0px;
+    float: left;
+    
+}
+.menu {
+    height: 60px;
+    background-color: #060018;
+    margin: 0px;
+    padding: 0px;    
+    padding-left: 700px;
+    text-decoration: none;
+    
+}
+.menu a {
+    color: #fff;
+    display: block;
+    padding: 10px;
+    margin-top: 10px;
+}
+ a {
+     transition: all 0.5s linear;
+      font-size: 17px;
+ }
+.menu a:hover,
+.menu li.active a {
+    background-color: #458842;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+}
+.menu li {
+    list-style: none;
+    display: inline-block;
+}
+.banner {
+    height:calc(150vh - 60px);
+    background-color: rgba(0,0,0,0.7);
+    background-image: url('../welyuvanvieira.github.io/imagens/banner-10.png');
+    background-size: cover;
+    
+    background-position: 70% 50%;
+}
+.container {
+    width: auto;
+    height: 50%;
+    font-size: 60px;
+    font-weight: bolder;
+    text-shadow: 2px 2px 3px #458842(66, 1, 82, 0.5); 
+    padding-top: 140px;
+    padding-bottom: 0px;
+    padding-left: 150px;   
+    color: #458842(66, 1, 82, 0.5); 
+
+}
+.efeito-click {
+    position: absolute;
+    margin-top: -130px;
+    margin-left: -40px;
+    width: 500px;
+    height: 700px;
+    display: flex;
+    
+}
+.efeito-click-inst-container{
+    border-radius: 50%;
+    display:none;
+    width: 150px;
+    height: 150px;
+    margin-top: 58px;
+    margin-left: 60px;;
+    position: absolute;
+    background-size: cover;
+     background-image: url('../welyuvanvieira.github.io/imagens/inst-art.png');
+}  
+.efeito-click-face-container{
+    border-radius: 50%;
+    display:none;
+    width: 150px;
+    height: 150px;
+    margin-top: 235px;
+    margin-left: 122px;;
+    position: absolute;
+    background-size: cover;
+     background-image: url('../welyuvanvieira.github.io/imagens/face\ art.png');
+}      
+.efeito-click-link-container{
+    border-radius: 50%;
+    display:none;
+    width: 130px;
+    height: 130px;
+    margin-top: 180px;
+    margin-left: 350px;;
+    position: absolute;
+    background-size: cover;
+     background-image: url('../welyuvanvieira.github.io/imagens/link-art.png');
+}     
+.efeito-click-whats-container{
+    border-radius: 50%;
+    display:none;
+    width: 165px;
+    height: 165px;
+    margin-top: 468px;
+    margin-left: 65px;;
+    position: absolute;
+    background-size: cover;
+     background-image: url('../welyuvanvieira.github.io/imagens/whats\ art.png');
+}     
+.efeito-click-gmail-container{
+    border-radius: 50%;
+    display:none;
+    width: 130px;
+    height: 130px;
+    margin-top: 382px;
+    margin-left: 258px;;
+    position: absolute;
+    background-image: url('../welyuvanvieira.github.io/imagens/gmail\ art.png');
+    
+    
+}     
+.efeito-click-inst-container:hover,
+.efeito-click-face-container:hover,
+.efeito-click-link-container:hover,
+.efeito-click-whats-container:hover,
+.efeito-click-gmail-container:hover {
+    
+    box-shadow: 0px 7px 10px #0e0024;
+    transform: scale(1.05); /* aumenta a imagem em 5% */
+    transition: all 0.3s ease; /* transição suave para o efeito de hover */
+}
+a {
+     text-decoration:dashed;
+}
+.default {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.default .section-title, 
+.default .section-dec {
+    text-align: center;
+    text-transform: uppercase;
+}
+.default .section-title{
+    font-size: 30px;
+    font-weight: bold;
+    color: #000000;
+}
+.default .section-dec {
+    color: #458842;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+.default .section-body {
+    max-width: 1140px;
+    margin: auto;
+    min-height: 100px;
+   
+}
+.default.light{
+    background-color: #f9f9f9;
+}
+.default.light .section-title{
+    color: #000000;
+}
+.default.dark{
+    background-color: #000000;
+}
+.default.dark .section-title{
+    color: #f9f9f9;
+}
+.section-dec {
+    width: 200px;
+    height: 2px;
+    background-color: #458842;
+    margin:5px auto;
+}
+
+mark {
+    background-color: #478843;
+    color:#000;
+    padding: 0 4px;
+    border-radius: 4px;
+}
+.banner-conhecimentos-container {
+  display: flex;
+  justify-content: center;
+  margin-top:70px;
+  align-items: center;
+  gap: 15px;
+  
+ }
+.banner-conhecimentos-container img {
+    width: 100px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.banner-conhecimentos-container img:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px rgba(10, 153, 10, 0.7);
+}    
+
+.section-certificados {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    gap: 20px;
+    background-color: #fff;
+}
+
+.certificado{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    
+}
+
+.formulario {
+    width: 50px;
+    margin-left: 900px;
+}
+footer {
+    width: 100%;
+    height: 100px;
+    text-align: center;    
+    background-color: #ffffff;
+}
+.section-projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+}
+
+.section-projects--filters {
+    border: 1px solid #478843;
+    border-radius: 30px;
+    display: inline-block;
+    justify-content: center;
+    background-color: f0eeec96;
+   /* box-shadow: 0px 2px 5px #333;  sombra para dar um efeito de profundidade */
+}
+.section-projects--filters ul,
+.section-projects--filters li {
+    list-style: none;
+    padding: 10px 20px;
+}
+.section-projects--filters li {
+    display: inline-block;
+    padding: 10px;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: bold;
+    color: #ffffff;
+    cursor: pointer;
+    border-left: 1px solid #6f946d;
+    border-bottom: 1px solid #6f946d none;
+    cursor: pointer;
+}
+.section-projects--filters li:hover,
+.section-projects--filters li.active {
+    border-bottom: 5px solid #9cec98;
+    font-size: 14px;
+    color: #478843;
+    
+}
+.section-projects--filters li:first-child {
+    border-left: none; /* para tirar a borda do primeiro item */
+}
+.section-projects--photographs {
+    width: 100vw;
+    max-width: 1140px;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap; /* para quebrar a linha quando chegar no limite da tela */
+    justify-content: center;
+}
+.section-projects--photograph {
+    width: 280px;
+}
+
+.section-projects--photoare {
+    margin: 10px;
+    width: 260px;
+    height: 250px;
+}
+.section-projects--photoare img {
+    width: inherit;   /* A imagem tera a mesma area do photoare  poderia ter colocado 260px*/
+    height: inherit;  /* A imagem tera a mesma area do photoare pederia ter colocado 160px */                 
+    object-fit: cover; /* para a imagem preencher todo o espaço definido */
+}
+.section-projects--info {
+    position: absolute;
+    background-color: rgba(0,0,0,0.7);
+    width: inherit;
+    height: inherit;
+    display: none;
+    flex-direction:column; /* para o texto ficar em baixo da imagem */
+    justify-content: center;
+    align-items: center;
+    color:#fff
+}
+.section-projects--info h5 {
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.section-projects--photoare:hover .section-projects--info {
+    display: flex;
+}
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    background-color:#284d26;
+    color: #fff;
+    border: none;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
