@@ -5,7 +5,8 @@ body {
 }
 
     
-.logomarca {
+/*.logomarca {
+    display: none;
     width: 400px;
     height: 60px;
     object-fit: cover;
@@ -13,7 +14,7 @@ body {
     margin-top: 0px;
     float: left;
     
-}
+}*/
 .menu {
     height: 60px;
     background-color: #060018;
@@ -35,12 +36,12 @@ body {
  }
 .menu a:hover,
 .menu li.active a {
-    background-color: #458842;
+    background-color: #4cb8e2;
     font-size: 18px;
     color: rgb(255, 255, 255);
     border-radius: 5px;
 }
-.menu li {
+.menu li {''
     list-style: none;
     display: inline-block;
 }
@@ -57,13 +58,14 @@ body {
     height: 50%;
     font-size: 60px;
     font-weight: bolder;
-    text-shadow: 2px 2px 3px #458842(66, 1, 82, 0.5); 
+    text-shadow: 2px 2px 3px #4cb8e2(66, 1, 82, 0.5); 
     padding-top: 140px;
     padding-bottom: 0px;
     padding-left: 150px;   
-    color: #458842(66, 1, 82, 0.5); 
+    color: #4cb8e2(66, 1, 82, 0.5); 
 
 }
+
 .efeito-click {
     position: absolute;
     margin-top: -130px;
@@ -135,7 +137,7 @@ body {
 .efeito-click-whats-container:hover,
 .efeito-click-gmail-container:hover {
     
-    box-shadow: 0px 7px 10px #0e0024;
+    box-shadow: 0px 7px 10px #4cb8e2;
     transform: scale(1.05); /* aumenta a imagem em 5% */
     transition: all 0.3s ease; /* transição suave para o efeito de hover */
 }
@@ -145,6 +147,10 @@ a {
 .default {
     padding-top: 50px;
     padding-bottom: 50px;
+}
+.section-body  .ed-texto {
+    color: #ffffff;
+    text-align: right;
 }
 .default .section-title, 
 .default .section-dec {
@@ -157,7 +163,7 @@ a {
     color: #000000;
 }
 .default .section-dec {
-    color: #458842;
+    color: #4cb8e2;
     font-weight: bold;
     margin-bottom: 40px;
 }
@@ -182,12 +188,12 @@ a {
 .section-dec {
     width: 200px;
     height: 2px;
-    background-color: #458842;
+    background-color: #4cb8e2;
     margin:5px auto;
 }
 
 mark {
-    background-color: #478843;
+    background-color: #4cb8e2;
     color:#000;
     padding: 0 4px;
     border-radius: 4px;
@@ -210,7 +216,7 @@ mark {
 }
 .banner-conhecimentos-container img:hover {
   transform: scale(1.1);
-  box-shadow: 0 0 15px rgba(10, 153, 10, 0.7);
+  box-shadow: 0 0 15px #4cb8e2 (10, 153, 10, 0.7);
 }    
 
 .section-certificados {
@@ -248,7 +254,7 @@ footer {
 }
 
 .section-projects--filters {
-    border: 1px solid #478843;
+    border: 1px solid #4cb8e2;
     border-radius: 30px;
     display: inline-block;
     justify-content: center;
@@ -268,15 +274,15 @@ footer {
     font-weight: bold;
     color: #ffffff;
     cursor: pointer;
-    border-left: 1px solid #6f946d;
-    border-bottom: 1px solid #6f946d none;
+    border-left: 1px solid #4cb8e2;
+    border-bottom: 1px solid #4cb8e2 none;
     cursor: pointer;
 }
 .section-projects--filters li:hover,
 .section-projects--filters li.active {
-    border-bottom: 5px solid #9cec98;
+    border-bottom: 5px solid #4cb8e2;
     font-size: 14px;
-    color: #478843;
+    color: #4cb8e2;
     
 }
 .section-projects--filters li:first-child {
@@ -327,7 +333,7 @@ footer {
     display: inline-block;
     padding: 10px 20px;
     text-transform: uppercase;
-    background-color:#284d26;
+    background-color:#4cb8e2;
     color: #fff;
     border: none;
     text-decoration: none;
