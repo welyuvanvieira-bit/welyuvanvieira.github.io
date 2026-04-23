@@ -4,17 +4,16 @@ body {
    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
+.logomarca {
     
-/*.logomarca {
-    display: none;
     width: 400px;
     height: 60px;
     object-fit: cover;
     margin-left: 30px;
     margin-top: 0px;
     float: left;
-    
-}*/
+}
+
 .menu {
     height: 60px;
     background-color: #060018;
@@ -41,7 +40,7 @@ body {
     color: rgb(255, 255, 255);
     border-radius: 5px;
 }
-.menu li {''
+.menu li {
     list-style: none;
     display: inline-block;
 }
@@ -49,8 +48,7 @@ body {
     height:calc(150vh - 60px);
     background-color: rgba(0,0,0,0.7);
     background-image: url('../welyuvanvieira.github.io/imagens/banner-01.png');
-    background-size: cover;
-    
+    background-size: cover;    
     background-position: 70% 50%;
 }
 .container {
@@ -66,81 +64,6 @@ body {
 
 }
 
-.efeito-click {
-    position: absolute;
-    margin-top: -130px;
-    margin-left: -40px;
-    width: 500px;
-    height: 700px;
-    display: flex;
-    
-}
-.efeito-click-inst-container{
-    border-radius: 50%;
-    display:none;
-    width: 150px;
-    height: 150px;
-    margin-top: 58px;
-    margin-left: 60px;;
-    position: absolute;
-    background-size: cover;
-     background-image: url('../welyuvanvieira.github.io/imagens/inst-art.png');
-}  
-.efeito-click-face-container{
-    border-radius: 50%;
-    display:none;
-    width: 150px;
-    height: 150px;
-    margin-top: 235px;
-    margin-left: 122px;;
-    position: absolute;
-    background-size: cover;
-     background-image: url('../welyuvanvieira.github.io/imagens/face\ art.png');
-}      
-.efeito-click-link-container{
-    border-radius: 50%;
-    display:none;
-    width: 130px;
-    height: 130px;
-    margin-top: 180px;
-    margin-left: 350px;;
-    position: absolute;
-    background-size: cover;
-     background-image: url('../welyuvanvieira.github.io/imagens/link-art.png');
-}     
-.efeito-click-whats-container{
-    border-radius: 50%;
-    display:none;
-    width: 165px;
-    height: 165px;
-    margin-top: 468px;
-    margin-left: 65px;;
-    position: absolute;
-    background-size: cover;
-     background-image: url('../welyuvanvieira.github.io/imagens/whats\ art.png');
-}     
-.efeito-click-gmail-container{
-    border-radius: 50%;
-    display:none;
-    width: 130px;
-    height: 130px;
-    margin-top: 382px;
-    margin-left: 258px;;
-    position: absolute;
-    background-image: url('../welyuvanvieira.github.io/imagens/gmail\ art.png');
-    
-    
-}     
-.efeito-click-inst-container:hover,
-.efeito-click-face-container:hover,
-.efeito-click-link-container:hover,
-.efeito-click-whats-container:hover,
-.efeito-click-gmail-container:hover {
-    
-    box-shadow: 0px 7px 10px #4cb8e2;
-    transform: scale(1.05); /* aumenta a imagem em 5% */
-    transition: all 0.3s ease; /* transição suave para o efeito de hover */
-}
 a {
      text-decoration:dashed;
 }
@@ -216,36 +139,38 @@ mark {
 }
 .banner-conhecimentos-container img:hover {
   transform: scale(1.1);
-  box-shadow: 0 0 15px #4cb8e2 (10, 153, 10, 0.7);
+  box-shadow: 0px 7px 10px #4cb8e2;
+  
 }    
 
-.section-certificados {
+.section-projects--certificados {
+    width: 100vw;
+    max-width: 1140px;
+    margin-top: 20px;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* para quebrar a linha quando chegar no limite da tela */
     justify-content: center;
-    width: 200px;
-    height: 200px;
-    gap: 20px;
-    background-color: #fff;
 }
-
-.certificado{
-    width: 200px;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 10px;
+.section-projects--certificado {
+    width: 280px;
     
 }
 
-.formulario {
-    width: 50px;
-    margin-left: 900px;
+.section-projects--certificado-are {
+     margin: 10px;
+    width: 200px;
+    height: 260px;
+
 }
-footer {
-    width: 100%;
-    height: 100px;
-    text-align: center;    
-    background-color: #ffffff;
+.section-projects--certificado-are img {
+    width: inherit;   /* A imagem tera a mesma area do photoare  poderia ter colocado 260px*/
+    height: inherit;  /* A imagem tera a mesma area do photoare pederia ter colocado 160px */                 
+    object-fit: cover; /* para a imagem preencher todo o espaço definido */
+}
+
+.section-projects--certificado-are:hover {
+    transform: scale(1.1);
+    box-shadow: 0px 7px 10px #000000;
 }
 .section-projects {
     display: flex;
@@ -341,4 +266,139 @@ footer {
     font-size: 16px;
     cursor: pointer;
     margin-top: 20px;
+}
+
+.direita {
+    display: inline-block;
+    margin-left: 200px;
+    margin-top: 10px;
+    float: left;
+    font-size: 17px;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+.direita a {
+    
+    color: #000000;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    
+}
+.direita a img {
+    margin-top: 10px;
+    width: 20px;
+    height: 20px;
+    object-fit: cover;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+.esquerda {
+    margin: auto;
+    display: inline-block;
+    float: right;
+    margin-top: 20px;
+    height: auto;
+    width: 500px;
+}
+.rodape {
+    background-color: #02000b;
+    padding: 10px;
+    text-align: center;
+    color:#fff;
+    margin-bottom: 10px;
+    
+}
+
+
+.contato {
+    padding: 60px 10%;
+    background: #0f172a;
+    color: #fff;
+    text-align: center;
+}
+
+.contato h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+    border-bottom: 2px solid #38bdf8;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.container-contato {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+/* REDES */
+.redes {
+    flex: 1;
+    text-align: left;
+}
+
+.redes h3 {
+    margin-bottom: 20px;
+}
+
+.item-rede {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 15px 0;
+    text-decoration: none;
+    color: #cbd5f5;
+    transition: 0.3s;
+}
+
+.item-rede:hover {
+    color: #38bdf8;
+    transform: translateX(5px);
+}
+
+/* FORM */
+.form-contato {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-contato input,
+.form-contato textarea {
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    background: #1e293b;
+    color: #fff;
+}
+
+.form-contato input:focus,
+.form-contato textarea:focus {
+    border: 1px solid #38bdf8;
+}
+
+.form-contato textarea {
+    height: 120px;
+    resize: none;
+}
+
+.form-contato button {
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: #38bdf8;
+    color: #000;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.form-contato button:hover {
+    background: #0ea5e9;
+    transform: scale(1.05);
 }
